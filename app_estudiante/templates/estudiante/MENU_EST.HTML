@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}UTM HOME{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'estudiante/MENU_EST.CSS' %}">
+<style>
+
+    body {
+        background-image: url("{% static 'estudiante/img3.wallspic.com-estrella-constelacion-la_astronomia-objeto_astronomico-universo-6000x4000.jpg' %}");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+    }
+    .nombre {
+        color: rgb(255, 255, 255);
+        background-color: rgba(0, 0, 0, 0);
+        text-align: right;
+        text-transform: capitalize;
+        text-decoration: underline;
+        padding: 20px;
+
+    }
+
+
+
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="nombre">
+    {{nombre}} {{apellido}}
+</div>
+
+<div class="menu">
+    <a class="opciones1" href="{% url 'perfil' %}">Mi perfil</a>
+    <a class="opciones2" href="{% url 'inscribir_curso' %}">Inscribirse en Materias</a>
+    <a class="opciones3" href="{% url 'mis_inscripciones' %}">Materias Inscritas</a>
+    <a class="opciones4" href="{% url 'lista_para_eliminar' %}">Eliminar Inscripcion</a>
+    <a class="opciones5" href="{% url 'logout_estudiante' %}">Cerrar Sesión</a>
+</div>
+
+
+{% endblock %}

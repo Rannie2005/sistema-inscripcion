@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}LOGIN UTM{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'estudiante/LOGIN.CSS' %}">
+
+<link rel="stylesheet" href="{% static 'inscripcion/inscribir.css' %}">
+    <style>
+        body {
+        background-image: url("{% static 'estudiante/img3.wallspic.com-estrella-constelacion-la_astronomia-objeto_astronomico-universo-6000x4000.jpg' %}");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        }
+        .nombre {
+        color: rgb(255, 255, 255);
+        background-color: rgba(0, 0, 0, 0);
+        text-align: right;
+        text-transform: capitalize;
+        text-decoration: underline;
+        padding: 20px;
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+<!-- Fondo del body, puedes mover esto al CSS general -->
+<div>
+
+    <form class="form" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input class="submit" type="submit" value="INICIAR SECCIÓN">
+    </form>
+
+</div>
+{% endblock %}

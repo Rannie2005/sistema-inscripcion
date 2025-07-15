@@ -1,0 +1,74 @@
+.inscripcion-container {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 15px;
+    color: white;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 0 15px rgba(0, 128, 255, 0.3);
+}
+
+.inscripcion-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 26px;
+    color: #87cefa;
+}
+
+.form-inscripcion p {
+    margin-bottom: 20px;
+}
+
+.form-inscripcion label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ddd;
+    font-weight: bold;
+}
+
+.form-inscripcion select,
+.form-inscripcion input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.btn-inscribirse {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.btn-inscribirse:hover {
+    background-color: #0056b3;
+}
+
+.alert {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.alert-success {
+    background-color: #28a745;
+    color: white;
+}
+
+.alert-error,
+.alert-danger {
+    background-color: #dc3545;
+    color: white;
+}

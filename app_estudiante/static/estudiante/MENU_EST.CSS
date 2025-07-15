@@ -1,0 +1,113 @@
+
+
+
+
+.rell {
+    position: relative;
+    height: 100px;
+    background-color:rgb(0, 0, 0);
+    background: -moz-linear-gradient(135deg, black, #673ab7 );
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+
+
+
+
+
+.menu {
+    background-color: rgba(0, 0, 0, 0.342);
+    padding: 20px;
+    display: flex;                  /* 👈 Esto es necesario */
+    flex-direction: column;         /* 👈 Para que los links estén en columna */
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 120px;
+    left: 0;
+    border-radius: 20px;
+    border: 1px solid rgba(5, 5, 5, 0);        /* Más limpio que usar border-color y border-style separados */
+    width: 200px;
+}
+.menu a {
+    display: block; /* Asegura que cada enlace esté uno debajo del otro */
+    text-transform: capitalize;
+    color: #ffffff;
+    background: linear-gradient(135deg, #000000, #673ab7); /* gradiente suave */
+    text-decoration: none;
+    font-size: 18px;
+    padding: 12px 20px;
+    border-radius: 12px;
+    margin: 10px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.opciones1 {
+    text-transform: capitalize;
+    color: rgb(245, 239, 245);
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.692);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: background-color 0.3s;
+    margin-bottom: 20%
+    
+    
+}
+.opciones2 {
+    text-transform: capitalize;
+    color: rgb(238, 236, 238);
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.692);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 20px;
+    transition: background-color 0.3s;
+    margin-bottom: 20%;
+    
+}
+
+
+
+.opciones3 {
+    text-transform: capitalize;
+    color: rgb(219, 214, 219);
+    border-radius: 20px;
+    background-color: rgba(40, 17, 70, 0.692);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 20px;
+    transition: background-color 0.3s;
+    margin-bottom: 20%;
+}
+.opciones4 {
+    text-transform: capitalize;
+    color: rgb(255, 252, 255);
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.692);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 20px;
+    transition: background-color 0.3s;
+    margin-bottom: 20%;
+    
+}
+.opciones5 {
+    text-transform: capitalize;
+    color: rgb(209, 207, 209);
+    border-radius: 20px;
+    background-color: rgba(82, 36, 143, 0.692);
+    text-decoration: none;
+    font-size: 19px;
+    padding: 5px 20px;
+    transition: background-color 0.3s;
+    margin-top:auto ;
+    margin-bottom: 20%;
+    
+}
+
+

@@ -1,0 +1,99 @@
+body {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-transform: uppercase;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    position: relative; 
+}
+
+
+/* RESET PARA EL HEADER */
+
+.form {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 400px;
+    margin: 150px auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+    box-sizing: border-box;
+}
+
+.form:hover {
+    transform: translateY(-10px);
+}
+
+.form label {
+    display: block;
+    color: white;
+    margin-bottom: 8px;
+    text-align: left;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.form input[type="text"],
+.form input[type="password"] {
+    background-color: rgb(230, 230, 230);
+    color: black;
+    padding: 12px 20px;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 2px solid rgba(132, 52, 175, 0.913);
+    border-radius: 25px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.form input[type="text"]:focus,
+.form input[type="password"]:focus {
+    border-color: rgba(132, 52, 175, 0.913);
+    outline: none;
+    box-shadow: 0 0 10px rgba(132, 52, 175, 0.5);
+    background-color: white;
+}
+
+.submit {
+    background-color: rgba(15, 4, 21, 0.913);
+    color: rgba(132, 52, 175, 0.913);
+    display: block;
+    width: 100%;
+    margin: 30px auto 10px;
+    padding: 12px;
+    border: 3px solid rgba(132, 52, 175, 0.913);
+    box-sizing: border-box;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.submit:hover {
+    background-color: rgba(132, 52, 175, 0.913);
+    color: white;
+    transform: scale(1.02);
+}
+
+/* Estilos para los mensajes de error */
+.errorlist {
+    color: #ff6b6b;
+    list-style: none;
+    padding: 0;
+    margin: -15px 0 15px 0;
+    font-size: 13px;
+    text-align: left;
+    text-transform: none;
+}

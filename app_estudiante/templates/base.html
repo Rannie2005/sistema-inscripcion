@@ -1,0 +1,53 @@
+<!-- templates/base.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Inicio{% endblock %}</title>
+    <style>
+        .rell {
+            position: relative;
+            height: 100px;
+            background: linear-gradient(135deg, black, #673ab7);
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+        }
+
+        .logo {
+            width: 80px;
+            height: auto;
+        }
+
+        .universidad {
+            color: #673ab7;
+            font-size: 24px;
+            margin-left: 20px;
+        }
+    </style>
+    
+    {% load static %}
+    {% block extra_css %}
+
+    {% endblock %}
+</head>
+<body>
+
+    <!-- Header con logo -->
+    <div class="rell">
+        <a href="{% url 'home_estudiante' %}">
+            <img class="logo" src="{% static 'estudiante/image.png' %}" alt="logo utm">
+        </a>
+        <h1 class="universidad">UNIVERSIDAD TECNOLOGICA MUÑOZ</h1>
+    </div>
+    
+    <div>
+        {% block content %}
+        <!-- Contenido específico de cada página -->
+        {% endblock %}
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+.inscripciones-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.inscripciones-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #fff;
+    text-shadow: 1px 1px 5px #000;
+}
+
+.inscripciones-lista {
+    list-style-type: none;
+    padding: 0;
+}
+
+.inscripcion-item {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.inscripcion-item strong {
+    color: #87cefa; /* celeste */
+}
+
+.sin-inscripciones {
+    text-align: center;
+    color: #ffaaaa;
+    font-weight: bold;
+    font-size: 18px;
+}

@@ -1,0 +1,43 @@
+.perfil-container .dato {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    margin: 40px auto;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+}
+
+.perfil-container .dato h3 {
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.perfil-container .nombre {
+    text-align: right;
+    color: white;
+    padding: 20px;
+    font-size: 22px;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+
+.perfil-container a {
+    color: #66b3ff;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.perfil-container a:hover {
+    text-decoration: underline;
+}

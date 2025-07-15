@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Editar{% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'inscripcion/inscribir.css' %}">
+    <style>
+        body {
+        background-image: url("{% static 'estudiante/img3.wallspic.com-estrella-constelacion-la_astronomia-objeto_astronomico-universo-6000x4000.jpg' %}");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        }
+        .nombre {
+        color: rgb(255, 255, 255);
+        background-color: rgba(0, 0, 0, 0);
+        text-align: right;
+        text-transform: capitalize;
+        text-decoration: underline;
+        padding: 20px;
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+
+    <div class="nombre">
+        {{ nombre }}
+    </div>
+
+    <div class="inscripcion-container">
+        
+        {% if messages %}
+            {% for message in messages %}
+                <div class="alert alert-{{ message.tags }}">{{ message }}</div>
+            {% endfor %}
+        {% endif %}
+
+        <h2>Inscribirse en una asignatura</h2>
+
+        {% if form.errors %}
+            <div class="alert alert-danger">
+                <ul>
+                    {% for field in form %}
+                        {% for error in field.errors %}
+                            <li>{{ error }}</li>
+                        {% endfor %}
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
+
+        <form method="post" class="form-inscripcion">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn-inscribirse">📘 Inscribirse</button>
+        </form>
+    </div>
+{% endblock %}
