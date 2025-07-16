@@ -4,7 +4,7 @@ Este proyecto está diseñado para administrar el proceso de inscripción de mat
 
 
 # Características Principales
-##👨‍🎓 Para Estudiantes
+## 👨‍🎓 Para Estudiantes
 Acceso controlado: Solo los estudiantes registrados en la base de datos pueden iniciar sesión (no hay registro público).
 
 Gestión de perfil:
@@ -25,6 +25,7 @@ Retirar (eliminar) materias.
 
 Sesión segura: Cierre de sesión protegido.
 
+
 ## 👨‍💼 Para Administradores (Django Admin)
 Gestión de estudiantes:
 
@@ -38,11 +39,13 @@ Crear, editar o eliminar asignaturas.
 
 Asignar horarios y requisitos.
 
+
 ## 🖥️ Interfaz Responsiva
 
 Diseño adaptado para móviles, tablets y laptops.
 
 Navegación intuitiva y accesible.
+
 
 ## 🛠️ Tecnologías Utilizadas
 Backend: Django (Python) + PostgreSQL.
@@ -83,7 +86,7 @@ source venv/bin/activate
    python manage.py runserver
    ## 🔗 Accede: http://localhost:8000
 
-   ## Inicia Session con:
+   ## 7. Inicia Session con:
    USER: raniel@utm.edu.do
    PASSWORD: 1234utm
 
@@ -93,7 +96,8 @@ source venv/bin/activate
    USER: sara@utm.edu.do
    PASSWORD: 1234utm
 
-## 🐍 Especificaciones Técnicas
+
+## 8. 🐍 Especificaciones Técnicas
 Python 3.11 (requerido)
 
 Entorno virtual: Creado específicamente con 3.11
@@ -101,6 +105,7 @@ Entorno virtual: Creado específicamente con 3.11
 Django: Optimizado para esta versión
 
 Psycopg2: Compilado para Python 3.11
+
 
 ## 📸 Capturas de Pantalla 
 <img width="1351" height="596" alt="image" src="https://github.com/user-attachments/assets/a4947b1a-ae74-4328-bad0-5a94e8d284f0" />
@@ -113,9 +118,9 @@ Psycopg2: Compilado para Python 3.11
 
 
 
-
 ## Para contribuir o reportar issues, visita el repositorio.
 📧 Contacto: raniel.ant0880@gmail.com
+
 
 ## 📜 Licencia
 MIT License © Ranniel Muñoz.
