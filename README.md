@@ -16,4 +16,18 @@ Aplicación Django para gestión de inscripciones académicas
 1. Clonar repositorio
 2. pip install -r requirements.txt
 3. python manage.py runserver
+4. Puede iniciar session con:
+   
+   USER: raniel@utm.edu.do
+   PASSWORD: 1234utm
+
+   USER: vielko@utm.edu.do
+   PASSWORD: 1234utm
+
+   USER: sara@utm.edu.do
+   PASSWORD: 1234utm
+
+   
+
+   
    
