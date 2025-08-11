@@ -20,21 +20,9 @@ def login_estudiante(request):
                     apellido = estudiante.apellido
                     return redirect('home_estudiante')
                 else:
-                    return HttpResponse("""
-    <body style="background-color: black">
-        <h1 style="color: red; text-align: center; padding-top: 100px;">
-            Contraseña incorrecta!
-        </h1>
-    </body>
-""")
+                    return redirect('error1')
             except Estudiante.DoesNotExist:
-                return HttpResponse("""
-    <body style="background-color: black">
-        <h1 style="color: red; text-align: center; padding-top: 100px;">
-            Usuario no encontrado!
-        </h1>
-    </body>
-""")
+                return redirect('error2')
     else:
         form = LoginForm()
 
@@ -60,3 +48,9 @@ def logout_estudiante(request):
     return redirect('login_estudiante')
 
 
+def error1(request):
+    return render(request, 'estudiante/error1.html')
+
+
+def error2(request):
+    return render(request, 'estudiante/error2.html')

@@ -1,20 +1,16 @@
-# Entorno virtual
+# Entornos virtuales
 venv/
 env/
 entorno311/
 
-# Base de datos SQLite
-*.sqlite3
-
-# Archivos temporales
-*.pyc
+# Python cache
 __pycache__/
+*.py[cod]
 
-# Configuración de VSCode
-.vscode/
-
-# Archivos del sistema operativo
-.DS_Store
-
-# Variables y contraseñas (IMPORTANTE)
+# Archivos de entorno
 .env
+.env.local
+
+# IDE
+.vscode/
+.idea/

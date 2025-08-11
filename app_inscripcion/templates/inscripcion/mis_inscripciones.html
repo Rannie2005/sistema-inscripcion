@@ -49,6 +49,9 @@
                         <strong>Horario:</strong> {{ inscripcion.curso.horario }} <br>
                     </li>
                 {% endfor %}
+                <a href="{% url 'descargar_hoja_inscripcion' %}" class="btn btn-success" style="color: brown; ">
+                    Descargar Hoja de Inscripción (PDF)
+                </a>
             </ul>
         {% else %}
             <p class="sin-inscripciones">No estás inscrito en ningún curso.</p>

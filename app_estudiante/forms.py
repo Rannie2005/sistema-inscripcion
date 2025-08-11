@@ -7,6 +7,9 @@ class LoginForm(forms.Form):
     correo = forms.CharField(label='Correo', max_length=50)
     contrasena = forms.CharField(label='Contraseña', widget=forms.PasswordInput)
 
+class CheckForm(forms.Form):
+    codigo = forms.IntegerField(label="Codigo De Verificacion") 
+
 
 class EditarForm(forms.ModelForm):
     contrasena = forms.CharField(widget=forms.PasswordInput, required=False)
