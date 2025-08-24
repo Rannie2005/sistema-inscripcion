@@ -27,7 +27,6 @@ class Inscripcion(models.Model):
 
     
 def clean(self):
-    # Evitar gradar si faltan datos
     if not self.estudiante_id or not self.curso_id:
         return
 
